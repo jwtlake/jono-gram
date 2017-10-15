@@ -1,5 +1,5 @@
 {
-  "name": "jono-gram",
+  "name": "jono-gram-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/jwtlake/jono-gram.git"
   },
-  "author": "Jonathan Lake",
+  "author": "Jonathan Lake <jwtlake@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jwtlake/jono-gram/issues"
