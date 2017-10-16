@@ -1,0 +1,16 @@
+{
+	"posts": [
+		{
+			"title": "first post",
+			"body": "this is great"
+		},
+		{
+			"title": "second post",
+			"body": "it could be better"
+		},
+		{
+			"title": "third post",
+			"body": "it could be worst"
+		}
+	]
+}
