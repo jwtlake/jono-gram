@@ -6,8 +6,8 @@ const posts = require('./posts.json');
 // Create a server with a host and port
 const server = new Hapi.Server();
 server.connection({
-  host: 'localhost',
-  port: 3000,
+  host: '0.0.0.0',
+  port: 8080,
 });
 
 // Add the route
