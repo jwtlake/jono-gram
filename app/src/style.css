@@ -1,0 +1,11 @@
+.hello {
+  color: #03a9f4;
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+  background: url('./dev-team-photo.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500;
+}
