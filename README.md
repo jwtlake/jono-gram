@@ -4,8 +4,8 @@
 simple instagram clone project to try out some new technologies
 
 ## layout
-jono-gram-app
-jono-gram-server
+- [jono-gram-app]('app/README.md')
+- [jono-gram-server]('server/README.md')
 
 ## learnig objectives
 - [ ] reactjs
