@@ -14,3 +14,14 @@ jono-gram-server
 - [ ] pwa
 - [ ] ci
 - [ ] tags/versioning
+
+## docker commands
+```docker images```
+```docker ps```
+```docker build -t <your username>/node-web-app .```
+```docker run -p --name="your-image-name" 49160:8080 -d <your username>/node-web-app```
+```docker kill <container_id or name>```
+
+```docker-compose up```
+```docker-compose up -d```
+```docker-compose ps```
