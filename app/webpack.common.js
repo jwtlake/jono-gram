@@ -2,8 +2,16 @@ const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const mainPage = {
+  title: 'Hello World',
+  favicon: './src/favicon.ico',
+  template: './src/index.html',
+};
+
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    main: './src/index.js',
+  },
   module: {
     rules: [
       {
@@ -23,7 +31,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['dist', 'build'], { verbose: true }),
-    new HtmlWebpackPlugin({ template: './src/index.html' }),
+    new HtmlWebpackPlugin(mainPage),
   ],
   output: {
     filename: '[name].bundle.js',
