@@ -1,9 +1,12 @@
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
@@ -23,4 +26,9 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new CleanWebpackPlugin(['dist', 'build'], { verbose: true }),
+    new webpack.optimize.UglifyJsPlugin(),
+    new HtmlWebpackPlugin({ template: './src/index.html' }),
+  ],
 };
