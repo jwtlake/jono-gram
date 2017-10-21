@@ -1,6 +1,22 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WebpackPwaManifest = require('webpack-pwa-manifest');
+
+const pwaManifest = {
+  name: 'Jonogram',
+  short_name: 'Jonogram',
+  description: 'All things Jono',
+  lang: 'en-US',
+  start_url: './index.html',
+  display: 'standalone',
+  background_color: '#fafafa',
+  orientation: 'portrait-primary',
+  icons: [{
+    src: path.resolve('src/android-icon.png'),
+    sizes: [96, 128, 192, 256, 384, 512],
+  }],
+};
 
 const mainPage = {
   title: 'Hello World',
@@ -31,6 +47,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist', 'build'], { verbose: true }),
     new HtmlWebpackPlugin(mainPage),
+    new WebpackPwaManifest(pwaManifest),
   ],
   output: {
     filename: '[name].bundle.js',
