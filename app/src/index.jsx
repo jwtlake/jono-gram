@@ -5,7 +5,7 @@ import './style.css';
 const App = () => {
   return (
     <div className="hello">
-      Hello World
+      Who are you?! You shouldn&apos;t be here.
     </div>
   );
 };
