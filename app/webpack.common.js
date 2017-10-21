@@ -13,14 +13,14 @@ const pwaManifest = {
   background_color: '#fafafa',
   orientation: 'portrait-primary',
   icons: [{
-    src: path.resolve('src/android-icon.png'),
+    src: path.resolve('src/images/android-icon.png'),
     sizes: [96, 128, 192, 256, 384, 512],
   }],
 };
 
 const mainPage = {
   title: 'Hello World',
-  favicon: './src/favicon.ico',
+  favicon: './src/images/favicon.ico',
   template: './src/index.html',
 };
 
