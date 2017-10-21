@@ -28,4 +28,8 @@ docker kill <container_id or name>
 docker-compose up
 docker-compose up -d
 docker-compose ps
+
+// docker network
+docker network ls
+docker network inspect <name>
 ```
