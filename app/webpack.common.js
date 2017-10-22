@@ -46,6 +46,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
+    modules: ['src', 'node_modules'],
   },
   plugins: [
     new CleanWebpackPlugin(['dist', 'build'], { verbose: true }),
